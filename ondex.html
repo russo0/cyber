@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boreal One AB | Cybersecurity & IT Infrastructure</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link class="apple-touch-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyberDark: '#080c14',
+                        cyberBlue: '#38bdf8',
+                        cyberBlueDark: '#0369a1'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#080c14] text-gray-300 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <nav class="border-b border-gray-900 bg-[#080c14]/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 min-h-16 py-3 sm:py-0 flex flex-wrap items-center justify-between gap-y-3">
+            
+            <a href="https://borealone.com" class="flex items-center space-x-3 group order-1">
+                <img src="logo-icon.png" alt="Boreal One AB" class="w-8 h-8 rounded-full object-cover border border-white/10 shadow-sm">
+                <span class="font-bold text-xs sm:text-lg tracking-wider text-white group-hover:text-gray-400 transition">BOREAL ONE CYBER</span>
+            </a>
+            
+            <div class="flex space-x-1 bg-gray-950 p-1 rounded border border-gray-800 text-xs font-bold order-2 sm:order-3">
+                <button onclick="setLanguage('en')" id="btn-en" class="px-2 py-1 rounded transition text-white bg-gray-800">EN</button>
+                <button onclick="setLanguage('sv')" id="btn-sv" class="px-2 py-1 rounded transition text-gray-400 hover:text-white">SV</button>
+                <button onclick="setLanguage('pt')" id="btn-pt" class="px-2 py-1 rounded transition text-gray-400 hover:text-white">PT</button>
+            </div>
+
+            <div class="w-full sm:w-auto flex items-center justify-between sm:justify-start space-x-4 text-[11px] sm:text-xs font-medium order-3 sm:order-2 border-t border-gray-900/60 pt-2 sm:pt-0 sm:border-none">
+                <a href="https://borealone.com" id="nav-main-link" class="text-gray-400 hover:text-white py-1 transition uppercase tracking-wider sm:normal-case">
+                    ← Voltar ao Início
+                </a>
+                <a href="https://media.borealone.com" id="nav-media-link" class="bg-gray-950 hover:bg-gray-900 text-cyberBlue px-3 py-1.5 rounded border border-gray-800/80 transition uppercase tracking-wider sm:normal-case font-bold">
+                    Media & Photography →
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto text-center pt-20 pb-16 px-4">
+        <span id="page-badge" class="text-cyberBlue text-xs font-bold tracking-widest uppercase bg-cyberBlue/10 px-4 py-1 rounded-full border border-cyberBlue/20">
+            Secure Infrastructure Engineering
+        </span>
+        <h1 id="hero-title" class="text-3xl md:text-5xl font-light text-white tracking-tight leading-tight mt-6 mb-6">
+            High-Performance IT Infrastructure & Cybersecurity
+        </h1>
+        <p id="hero-desc" class="text-gray-400 text-sm md:text-lg font-light max-w-2xl mx-auto leading-relaxed">
+            Protecting digital assets and engineering resilient, enterprise-grade network architectures tailored for maximum reliability and security.
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 pb-24 w-full flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+            
+            <div class="bg-slate-900/20 border border-gray-800/60 rounded-2xl p-6 md:p-8 shadow-xl flex flex-col justify-between hover:border-cyberBlueDark/40 transition duration-300">
+                <div>
+                    <div class="w-10 h-10 rounded-lg bg-cyberBlue/10 border border-cyberBlue/20 flex items-center justify-center text-cyberBlue mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h3.375c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-4.5L11.25 9M
